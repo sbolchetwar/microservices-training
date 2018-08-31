@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: ldap-auth-app
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Sandeep
+Implementation-Vendor-Id: spring-ldap
+Build-Jdk: 1.8.0_131
+Implementation-URL: http://maven.apache.org
+Created-By: Maven Integration for Eclipse
+
