@@ -2,7 +2,7 @@ spring:
   session:
     store-type: redis
   redis:
-    port: 12000
+    port: 6379
 zuul: 
   retryable: true
   routes:
