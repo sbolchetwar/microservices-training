@@ -13,3 +13,7 @@ security:
   user:
     name: gateway
     password: password
+server:
+    servlet:
+        session:
+            timeout: 30m
