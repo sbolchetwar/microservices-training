@@ -4,7 +4,7 @@ spring:
   redis:
     port: 6379
 
-security:
-  user:
-    name: user
-    password: password
+server:
+    servlet:
+        session:
+            timeout: 60s

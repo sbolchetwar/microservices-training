@@ -13,4 +13,4 @@ zuul:
 server:
     servlet:
         session:
-            timeout: 30m
+            timeout: 60s
