@@ -1,0 +1,25 @@
+=================================
+Docker
+=================================
+step 1:
+Install Docker engine
+
+verify installation - docker -v
+
+step 2:
+create docker file in application root folder
+file content as below:
+	FROM openjdk:8
+	ADD target/<jar-name> <jar-name>
+	EXPOSE 8085
+	ENTRYPOINT ["java","-jar","<jar-name>"]
+
+Step 3:
+Building docker image	
+
+docker build -f Dockerfile -t <docker-image-name> .
+
+Step 4:
+Running docker container
+
+docker run -p 8085:8085 <docker-image-name>
