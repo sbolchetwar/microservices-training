@@ -1,0 +1,33 @@
+=======================================================================
+Steps to deploy microservice application to PCF (Pivotal Cloud Foundry)
+=======================================================================
+1. Create PCF account
+Pivotal CF login - https://login.run.pivotal.io/
+
+2. Create Orgnization from Pivotal web ui
+
+3. Install CF client
+download link
+https://cli.run.pivotal.io/stable?release=windows64&source=github
+
+4. Unpack the zip file.
+Right click on the ‘cf_installer’ executable and select “Run as Adminstrator”
+When prompted, click Install, then Finish.
+To verify your installation, open a command prompt and type cf.
+If your installation was successful, the cf CLI help listing appears.
+
+5. Login to PCF from CF CLI
+
+CF API endpoint - https://api.run.pivotal.io
+
+To login to CF cli follow
+Open command prompt run below command
+cf login -a https://api.run.pivotal.io -u <user account emailid>
+Enter password
+
+6. PUSH microservice application jar to PCF
+
+cf push <Application Name> -p <JAR File>
+
+Example :
+cf push cf-hello-app -p target\Spring-Cf-app-0.0.1-SNAPSHOT.jar
