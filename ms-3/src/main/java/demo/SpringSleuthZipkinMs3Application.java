@@ -5,10 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-public class SpringZipkinSleuthApplication {
+public class SpringSleuthZipkinMs3Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringZipkinSleuthApplication.class, args);
+		SpringApplication.run(SpringSleuthZipkinMs3Application.class, args);
 	}
-}
 
+}
